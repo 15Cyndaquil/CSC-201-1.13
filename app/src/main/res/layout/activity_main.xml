@@ -10,8 +10,160 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.cynda.csc_201_113.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ax + by = e"
+                android:id="@+id/line1"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textAlignment="textStart"
+                android:layout_height="wrap_content"
+                android:layout_width="290sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/aET"
+                android:layout_weight="1"
+                android:hint="A = ?" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/bET"
+                android:layout_weight="1"
+                android:hint="B = ?" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/eET"
+                android:layout_weight="1"
+                android:hint="E = ?" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="cx + dy = f"
+                android:layout_height="wrap_content"
+                android:id="@+id/line2"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_width="290sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/cET"
+                android:hint="C = ?"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/dET"
+                android:hint="D = ?"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/fET"
+                android:layout_weight="1"
+                android:hint="F = ?" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Calculate: x and y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculateBT"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="X: Output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xTV"
+                android:layout_weight="1"
+                android:textSize="50sp"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Y: Output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yTV"
+                android:layout_weight="1"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/errorTV"
+            android:textSize="100sp" />
+    </LinearLayout>
+
 </RelativeLayout>
